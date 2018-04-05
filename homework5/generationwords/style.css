@@ -1,0 +1,40 @@
+html {
+ 	height: auto ;
+  	margin: auto;
+  	padding: 0;
+}
+
+body{
+	display: flex;
+	max-width: 100;
+	flex-direction: row-reverse;
+	color: yellow;
+	height: 100%;
+	text-align: justify;
+	font-family: serif ; 
+	background: rgba(1,1,200,200);
+	align-items: flex-end;
+}
+
+#generation{
+	padding-top: 200px;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-start;
+	align-items: flex-end; 
+	padding: 10px;
+	height: 80%;
+	width: 32px;
+}
+
+.div{
+	line-height: 200%;
+	margin-bottom: 10px; 
+	display: inline-block;
+	background: rgba(26,30,36,0.7);
+	border: 1px solid rgba(26,30,36,0.1);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	height: 80px;
+	width: 260px;
+}
