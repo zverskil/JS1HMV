@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Валидация вводимых данных</title>
+</head>
+<body>
+	<p>Пожалуйста, выполните авторизацию.</p>
+	<label>
+		<p><table>Введите своё имя: </table></p>
+		<input type="text" id="Name" placeholder = "Иван" required>
+	</label>
+	<label>
+		<p><table>Введите номер телефона(BY): </table></p>
+		<input type="text" id="Phone" placeholder = "+375(XX)XXX-XX-XX" required>
+	</label>
+	<label>
+		<p><table>Введите почту: </table></p>
+		<input type="text" id="E-mail" placeholder = "example@gmail.com" required>
+	</label>
+	<label>
+		<p><table>Введите адрес сайта: </table></p>
+		<input type="text" id="Site" placeholder = "http://ваш_сайт" required>
+	</label>
+	<label>
+		<p><table>Введите ваш возраст: </table></p>
+		<input type="text" id="Vozrast" placeholder = "14-90" required>
+	</label>
+	<p><input type="button" value="Проверить валидацию" id="click_me"></p>
+	<script src="five.js"></script>
+</body>
+</html>
