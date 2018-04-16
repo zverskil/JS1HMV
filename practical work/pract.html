@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Калькулятор</title>  
+<style>
+	   div input {
+            font-size: 20px;
+            height:40px;
+            width:100px;
+            background-color: #FF8C00;
+            text-align: center;
+            font-family: fantasy ;
+            border: 4px double black;
+        }
+
+        #calculatorbuttons	 {
+            width: 620px;
+            border: 7px dotted;
+            border-radius: 50px;
+            padding: 20px;
+            background-color: #98FB98;
+            margin-top: 20px;
+        }
+
+        #calculatortable {
+            font-size: 55px;
+            background-color: #C0C0C0;
+            text-align: right;
+            font-family: serif;
+        }
+
+        body {
+            margin-left: 300px;
+            background-color:  #F0E68C;
+        }
+
+</style>
+<body>
+
+  <p id ="calculator">
+    <input type="text" size="25" id="calculatortable" value="0" />
+    <input type="hidden" id="calculatormemory" value="0" />
+    <input type="hidden" id="base" value="0" />
+    <input type="hidden" id="logarifm" value="0" />
+
+   
+
+    <div id = calculatorbuttons>
+    	   <div>
+    	   <input type="button" value="sin" onclick='trigoperations("sin")'>  
+          <input type="button" value="cos" onclick='trigoperations("cos")'>
+          <input type="button" value="tan" onclick='trigoperations("tan")'>
+          <input type="button" value="asin" onclick='trigoperations("asin")'>
+          <input type="button" value="acos" onclick='trigoperations("acos")'>
+          <input type="button" value="atan" onclick='trigoperations("atan")'>
+    	   </div>
+    	   <div>
+    	  <input type="button" value="ln e" onclick='constanta("lnE")'>
+          <input type="button" value="log2 e" onclick='constanta("log2E")'>
+          <input type="button" value="log e 10" onclick='constanta("logE10")'>
+          <input type="button" value="exp" onclick='exponenta()'>
+          <input type="button" value="Pi" onclick='constanta("Pi")'>
+          <input type="button" value="E" onclick='constanta("E")'>
+    	   </div>
+      	   <div>  
+       	<input type="button" value="C" onclick='clearAll("0")'>  
+    	<input type="button" value="M" onclick='memory()'>
+    	<input type="button" value="MR" onclick='memoryRecall()'>
+    	<input type="button" value="<--" onclick='clearMe()'>
+        <input type="button" value="LogAB" onclick='logarifm()'>  
+        <input type="button" value="log" onclick='logotab()'>  
+  	      </div>     
+          <div>  
+        <input type="button" value="7" onclick='buttons("7")'>
+        <input type="button" value="8" onclick='buttons("8")'> 
+        <input type="button" value="9" onclick='buttons("9")'> 
+        <input type="button" value="÷" onclick='buttons("/")'>
+        <input type="button" value="x^2" onclick='operationwithx("2")'> 
+        <input type="button" value="x^1/2" onclick='operationwithx("1/2")'> 
+         </div> 
+  	     <div>
+        <input type="button" value="4" onclick='buttons("4")'>
+        <input type="button" value="5" onclick='buttons("5")'>
+        <input type="button" value="6" onclick='buttons("6")'>
+        <input type="button" value="X" onclick='buttons("*")'>
+		<input type="button" value="x^3" onclick='operationwithx("3")'> 
+        <input type="button" value="x^n" onclick='operationwithxandn(2)'> 
+        </div>
+  	    <div>	
+		<input type="button" value="1" onclick='buttons("1")'>
+		<input type="button" value="2" onclick='buttons("2")'>
+		<input type="button" value="3" onclick='buttons("3")'>
+		<input type="button" value="-" onclick='buttons("-")'>
+		<input type="button" value="1/x" onclick='operationwithx("-1")'> 
+		<input type="button" value="x^(1/n)" onclick='operationwithxandn(0.5)'>    
+         </div>
+         <div>
+       	<input type="button" value="0" onclick='buttons("0")' >
+       	<input type="button" value="+" onclick='buttons("+")'>
+       	<input type="button" value="." onclick='buttons(".")'> 
+       	<input type="button" value="=" onclick='otvet()'> 
+         </div>
+		 <div>	
+         <input type="button" value="10->2" onclick='iz10v2()'>
+         <input type="button" value="2->10" onclick='iz2v10()'>
+         <input type="button" value="10->8" onclick='iz10v8()'>
+         <input type="button" value="8->10" onclick='iz8v10()'>
+       </div>
+    </div>
+</p>
+    </div>
+</p>
+<script src="practicum.js"></script> 
+</body> 
+</html>
