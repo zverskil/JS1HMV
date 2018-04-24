@@ -1,0 +1,108 @@
+<!Doctype html> 
+<html lang="ru"> 
+<head> 
+<meta charset="utf-8">
+<title>Текстовый редактор</title>
+<style type="text/css">
+		button{
+		margin-top: 1%;
+		border-radius: 10px;
+		border:4px solid black;
+		background-color: white;
+		color:black;
+		outline: none;
+	}
+
+	img{
+		width: 50%;
+	}
+	.active{
+		border:6px solid green;
+	}
+	</style>
+</head>
+<body class= "buttons">
+	<div></div>
+	<button id = "btnBld">Жирный шрифт</button> 
+	<button id = "btnKurs">Курсивный шрифт</button> 
+	<button id = "btnpodcerk">Подчеркнуть</button> 
+	<button id = "btnzacherk">Зачеркнуть</button> 
+<input type="text" placeholder="Размер шрифта" size="13" id="size" readonly="true">
+		<select id="sizetext">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		 	<option value="4" selected="">4</option>
+ 			<option value="5">5</option>
+ 			<option value="6">6</option>
+ 			<option value="7">7</option>
+</select>
+<input type="text2" placeholder="Цвет текста" size="11" id="text" readonly="true">
+		<select id="colortext">
+			<option value="black">Чёрный</option>
+			<option value="brown">Коричневый</option>
+			<option value="red">Красный</option>
+			<option value="coral">Коралловый</option>
+		 	<option value="chartreuse">Бледно-зелёный</option>
+ 			<option value="aquamarine">Зеленовато-голубой</option>
+ 			<option value="blue">Синий</option>
+ 			<option value="deeppink">Насыщенный розовый </option>
+</select>
+<input type="text" id="font" placeholder="Шрифт" size="4" readonly="true">
+		<select id="garnitura">
+			<option value="Arial">Arial</option>
+		 	<option value="Helvetica">Helvetica</option>
+ 			<option value="Verdana">Verdana</option>
+ 			<option value="Trebuchet MS">Trebuchet MS</option>
+		 	<option value="Gill Sans">Gill Sans</option>
+ 			<option value="Times New Roman">Times New Roman</option>
+ 			<option value="Palatino">Palatino</option>
+		 	<option value="Andale Mono">Andale Mono</option>
+ 			<option value="Impact">Impact</option>
+</select>
+<input type="text" placeholder="Цвет фона" size="8" id="fone" readonly="true">
+		<select id="background">
+			<option value="black">Чёрный</option>
+			<option value="brown">Коричневый</option>
+			<option value="red">Красный</option>
+			<option value="coral">Коралловый</option>
+		 	<option value="chartreuse">Бледно-зелёный</option>
+ 			<option value="aquamarine">Зеленовато-голубой</option>
+ 			<option value="blue">Синий</option>
+ 			<option value="deeppink">Насыщенный розовый </option>
+</select>
+	<button id = "addssilk">Создать ссылку</button> 
+	<button id = "delssilk">Удалить ссылку</button>
+	<button id="addimage">Добавить картинку</button>
+	<button id="delete">Удалить</button>
+	<button id="ol">Добавить/удалить список</button>
+	<button id="addotst">Добавить отступ</button>
+	<button id="delotst">Удалить отступ</button>
+	<button id="livkrai" >Выравнивание по левому краю</button>
+	<button id="center" >Выравнивание по центру</button>
+	<button id="pravkrai">Выравнивание по правому краю</button>
+
+
+</div>
+<div contenteditable="true">В мае 1942 года главный конструктор отдела испытаний танкового вооружения (WaPruf 6) Э. Книпкамп создал специальную исследовательскую группу, которую возглавил лично. Эта группа должна была разработать ряд проектов боевых машин, в которых предполагалось учесть весь полученный к этому времени боевой опыт в области бронетехники. Работа эта была личной инициативой Книпкампа, и, естественно, шла довольно медленно — основные силы отдела испытаний танкового вооружения были задействованы на обеспечение серийного производства танков и разработку новых образцов по заказам армии. Тем не менее, к апрелю 1943 года группа сформулировала основные требования, которые следовало воплотить в новых боевых машинах. Весь проект получил обозначение «серия Е» (Е обозначает «разработка», от немецкого «Entwicklung»).
+
+В машинах серии Е предусматривалось реализовать следующие принципы:
+
+    максимально усилить защиту лобовой части корпуса, усилить вооружение и возимый боекомплект;
+    создать единый блок для трансмиссии и обеспечить его простой монтаж и демонтаж в корпусе для упрощения обслуживания и ремонта;
+    для увеличения внутреннего объёма корпуса и снижения общей высоты машин использовать подвеску с размещением упругих элементов снаружи корпуса, а также изменить компоновку, разместив двигатель с трансмиссией в корме;
+    конструкция подвески должна обеспечить возможность натяжения гусеницы при сорванном ленивце или части катков для возможности отвода танка в тыл;
+    использовать максимальное количество одинаковых узлов и агрегатов на всех боевых машинах, для облегчения производства, обслуживания и ремонта.
+
+Танки программы «E»:
+
+    E-10 — малый разведывательный танк и истребитель танков массой около 15 тонн. Должен был вооружаться 75-мм пушкой Pak 40 L/48.
+    E-25 — истребитель танков массой около 25—30 тонн. Должен был вооружаться 75-мм пушкой Pak L/70.
+    E-50 — средний танк массой около 50-55 тонн.
+    E-75 — тяжёлый танк массой около 75-80 тонн.
+    E-100 — сверхтяжелый танк массой 130—140 тонн, альтернатива сверхтяжелому танку «Maus».
+
+Танки программы «E»</div>
+<script src="redaktor.js"></script>
+</body>
+</html>
